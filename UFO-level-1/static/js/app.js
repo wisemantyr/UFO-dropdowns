@@ -3,7 +3,6 @@ var ufoData = data
 
 /* select table body */
 var ufoTable = d3.select("tbody")
-console.log(ufoTable)
 
 /* create function to build table */
 function tableBuilder(dictList) {
@@ -33,7 +32,6 @@ tableBuilder(ufoData)
     var userInput = userInputField.property("value");
     /* filter dataset on input text match */ 
     filteredData = ufoData.filter(ufo => ufo.datetime == userInput);
-    console.log(filteredData)
     /* reset table */ 
     ufoTable.html("")
     /* build table with filtered data */ 
